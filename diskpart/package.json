@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./diskpart create",
+    "flash": "ts-node --skipProject --transpileOnly ./flash.ts", 
     "activate": "ts-node ./diskpart activate"
   },
   "author": "",

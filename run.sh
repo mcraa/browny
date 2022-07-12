@@ -5,8 +5,8 @@ npm start
 cd ..
 
 #FLASH
-cd etcher-sdk
-echo 'flash'
+cd diskpart
+ts-node multi-destination.ts ../../balena-cloud-ide49-amd64-intel-nuc-2.98.33-v13.1.11.img.zip '\\\\.\\PhysicalDrive1'
 cd ..
 
 #SET partitiion active

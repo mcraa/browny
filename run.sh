@@ -5,9 +5,13 @@ npm start
 cd ..
 
 #FLASH
+cd etcher-sdk
 echo 'flash'
+cd ..
 
 #SET partitiion active
-echo 'active'
+cd diskpart
+npm run active
+cd ..
 
-#read -p "Press enter to exit. Then reboot"
+read -p "Press enter to exit. Then reboot"

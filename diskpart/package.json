@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./diskpart"
+    "start": "ts-node ./diskpart create",
+    "activate": "ts-node ./diskpart activate"
   },
   "author": "",
   "license": "ISC",

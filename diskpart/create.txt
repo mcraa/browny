@@ -1,0 +1,4 @@
+select disk 0
+select partition 3
+shrink desired=15000
+create partition primary size=15000

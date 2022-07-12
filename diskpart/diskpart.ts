@@ -1,16 +1,19 @@
-import { spawn } from 'child_process';
-import process from 'process';
+// import { spawn } from 'child_process';
+// import process from 'process';
+
+var sudo = require('sudo-prompt');
+var options = {
+  name: 'Brownfield migrator',
+};
+
+sudo.exec('diskpart /s script.txt', options,
+  function(error, stdout, stderr) {
+    if (error) throw error;
+    console.log('stdout: ' + stdout);
+  }
+);
 
 
-class Echo {
-    say(stuff: string, ...args: string[]) {
-        console.log(stuff, ...args);
-    }
-}
 
-let child = spawn('pwd')
-
-child.stdout.pipe(process.stdout)
-
-let echo = new Echo();
-echo.say("DISK", 'P', 'ART')
+// let child = spawn('pwd')
+// child.stdout.pipe(process.stdout)

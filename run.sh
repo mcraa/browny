@@ -1,7 +1,7 @@
 echo "STARTED Brownfield migrator";
 
 cd diskpart
-ts-node ./diskpart.ts
+npm start
 cd ..
 
 #FLASH

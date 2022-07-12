@@ -1,0 +1,15 @@
+{
+  "name": "diskpart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./diskpart"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sudo-prompt": "^9.2.1",
+    "ts-node": "^10.8.2"
+  }
+}
